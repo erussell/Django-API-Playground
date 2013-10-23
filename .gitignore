@@ -1,4 +1,8 @@
+build
+dist
 .idea
+.project
+.pydevproject
 *.pyc
-data
-settings_local.py
+*.pybuild
+*.egg-info
