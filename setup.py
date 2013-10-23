@@ -2,14 +2,14 @@ from setuptools import setup
 
 setup(
     name='django-api-playground',
-    version='0.1.1',
+    version='0.2.0-eor',
     packages=['apiplayground', 'apiplayground.templatetags'],
     zip_safe=False,
     include_package_data=True,
-    url='http://github.com/fatiherikli/django-api-playground',
+    url='http://github.com/erussell/django-api-playground',
     license='BSD',
-    author='fatiherikli',
-    author_email='fatiherikli@gmail.com',
+    author='fatiherikli, emidln, erussell',
+    author_email='erussell@ngs.org',
     description='API Playground for RESTful APIs',
     install_requires=['markdown'],
     classifiers=[

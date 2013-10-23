@@ -21,7 +21,8 @@ TYPE_WIDGET_MAPPING = {
     "string": forms.TextInput,
     "boolean": forms.CheckboxInput,
     "select": forms.Select,
-    "integer": forms.IntegerField
+    "integer": forms.IntegerField,
+    "file": forms.FileInput,
 }
 
 

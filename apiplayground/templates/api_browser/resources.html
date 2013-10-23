@@ -38,7 +38,7 @@
                         {% if endpoint.full_description %}
                             <div class="full_description">{{ endpoint.full_description|safe }}</div>
                         {% endif %}
-                        <form action="{{ endpoint.url }}" data-endpoint-url="{{ endpoint.url }}" method="{{ endpoint.method|upper }}">
+                        <form action="{{ endpoint.url }}" {% if endpoint.multipart %}enctype="multipart/form-data"{% endif %} data-urlencoded="{% if endpoint.urlencoded %}true{% else %}false {% endif %}" data-endpoint-url="{{ endpoint.url }}" method="{{ endpoint.method|upper }}">
                             {% spaceless %}
                                 {% get_endpoint_forms endpoint as forms %}
                                 {% if forms.url_parameter_form.fields %}
